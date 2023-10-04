@@ -6,8 +6,11 @@ public class ArrayValueCalculator {
         int totalAmount=0;
         for (int i=0;i< strings.length;i++){
             for (int j=0;j< strings.length;j++){
-                totalAmount=Integer.parseInt(strings[i][j]);
-
+                try {
+                    totalAmount+=Integer.parseInt(strings[i][j]);
+                }catch (NumberFormatException exception){
+                    throw new ArrayDataException("Can't convert value in cell {"+i+"}{ "+j+"} to int");
+                }
             }
         }
         return totalAmount;
