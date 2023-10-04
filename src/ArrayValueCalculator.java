@@ -1,6 +1,6 @@
 public class ArrayValueCalculator {
     public static int doCalc(String[][] strings) throws ArrayDataException,ArraySizeException{
-        if(strings.length!=4 || strings[0].length!=4 ){
+        if(strings.length!=4 && strings[0].length!=4 ){
             throw new ArraySizeException("The array must be 4x4 in size");
         }
         int totalAmount=0;

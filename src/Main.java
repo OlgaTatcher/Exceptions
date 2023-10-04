@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         String[][] strings={
+                {"58"},
                 {"1","2","3","4"},
                 {"12","22","32","42"},
                 {"15","25","35","45"},
                 {"18","28","38","48"},
+
         };
         try {
             int result= ArrayValueCalculator.doCalc(strings);
@@ -16,11 +18,11 @@ public class Main {
         }
 
         String[][] strings2={
-                {"1","2","3","4"},
+                {"fatality","2","3","4"},
                 {"12","22","32","42"},
                 {"15","25","35","45"},
-                {"18","28","fatality","48"},
-                {"58","68"},
+                {"18","28","38","48"},
+
         };
 
         try {
